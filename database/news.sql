@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2021 at 11:30 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.7
+-- Generation Time: May 01, 2022 at 06:58 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -62,7 +62,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `password`, `gender`, `dp`) VALUES
-(1, 'admin', 'admin@admin.com', 'asdf', 'Male', '60e9c8a33fee18.01922742.jpg');
+(1, 'admin', 'admin@gmail.com', '123456', 'Male', '60e9c8a33fee18.01922742.jpg');
 
 -- --------------------------------------------------------
 
@@ -92,7 +92,8 @@ INSERT INTO `contact_us` (`id`, `address`, `phn`, `email`, `fax`) VALUES
 (7, 'The Tribune Trust, Sector 29-C, Chandigarh (UT) 160030', '24124', '07@gmail.com', '`142`134`1'),
 (8, 'The Tribune Trust, Sector 29-C, Chandigarh (UT) 160030', '24124', '07@gmail.com', '`142`134`1'),
 (9, 'The Tribune Trust, Sector 29-C, Chandigarh (UT) 160030', '24124', '07@gmail.com', '`142`134`1'),
-(10, 'The Tribune Trust, Sector 29-C, Chandigarh (UT) 160030', '+913463463546', 'demo@demo.com', '+913463463546');
+(10, 'The Tribune Trust, Sector 29-C, Chandigarh (UT) 160030', '+913463463546', 'demo@demo.com', '+913463463546'),
+(11, 'The Tribune Trust, Sector 29-C, Chandigarh (UT) 160030', '+123456789120', 'idris@demo.com', '+9876543210456');
 
 -- --------------------------------------------------------
 
@@ -219,7 +220,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `contact_us`
 --
 ALTER TABLE `contact_us`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `post_category`
